@@ -1,5 +1,5 @@
 .taskBarMain {
-  height: 38px;
+  height: 40px;
   width: 100%;
   position: absolute;
   z-index: 100;
@@ -127,6 +127,7 @@
   cursor: default;
   font-size: 0.9rem;
   transition: width 0.3s linear;
+  overflow-y: hidden;
 }
 .windowsRight .windowsStart {
   height: 27px;
@@ -138,7 +139,7 @@
   display: flex;
   align-items: center;
 }
-.socialLinks{
+.socialLinks {
   height: auto;
   width: auto;
   display: flex;
@@ -146,10 +147,10 @@
   justify-content: center;
   gap: 1rem;
 }
-.logos{
+.logos {
   font-size: 1.5rem;
 }
-.logos:last-child{
+.logos:last-child {
   margin-right: 10px;
 }
 .windowsBattery {
@@ -158,8 +159,27 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 @media only screen and (max-width: 750px) {
+  .windowsLeft{
+    width: auto;
+  }
   .windowsRight {
-    width: 30%;
+    width: 50%;
+    margin-left: 10px;
+    overflow-x: scroll;
+  }
+  .windowsRight::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .windowsRight::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .windowsRight::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .windowsRight::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 }
 @media only screen and (max-width: 450px) {
