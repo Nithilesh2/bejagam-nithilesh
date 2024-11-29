@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* cursor: none; */
+  list-style-type: none;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.desktop {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("./assets/8-bit-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.customCursor {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
+  background-image: url("./assets/mouse_cicker_hand_clicker_sand_timer_and_loupe_pixelated.svg");
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+  transform: rotate(-25deg);
+  transform-origin: center;
+}
+.leftOne,
+.leftTwo,
+.leftThree,
+.leftFour,
+.leftFive {
+  height: auto;
+  width: 100%;
+  padding: 20px 0 0 20px;
+}
+.dragBox {
+  height: 400px;
+  width: auto;
+}
+
+.resumeFolder {
+  height: auto;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+}
+.resumeFolder img {
+  /* z-index: 0; */
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+.myResumeBoxActiveSmall .resumeImage {
+  height: 382px;
+  width: 380px;
+}
+.resume {
+  font-size: 1rem;
+}
+.myResumeBoxDeActive {
+  display: none;
+}
+.myResumeBoxActiveSmall {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 450px;
+  max-width: 550px;
+  width: 80%;
+  z-index: 900;
+  background-color: rgb(171, 171, 171);
+  border: 3px solid rgb(255, 255, 255);
+}
+.myResumeBoxActiveBig {
+  z-index: 99;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(171, 171, 171);
+  border: 3px solid rgb(255, 255, 255);
+}
+.myResumeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(109, 109, 109);
+}
+.myResumeTopLeft {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.myResumeTopRight {
+  height: 100%;
+  width: auto;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.myResumeTopRightButton {
+  border-radius: 1px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 201, 201);
+  font-weight: bolder;
+  border: 1px solid rgb(101, 101, 101);
+  filter: drop-shadow(2px 2px 2px rgba(86, 86, 86, 0.899));
+}
+.myResumeTopRightButton:first-child {
+  align-items: flex-end;
+}
+.myResumeCenter {
+  height: 87%;
+  width: 99%;
+  margin-top: 2px;
+  margin-left: 0.5%;
+  color: black;
+  background-color: #ffffff;
+  border: 2px solid rgb(63, 63, 63);
+  display: flex;
+  gap: 5rem;
+}
+.resumeDownload {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myResumeCenter .resumeDownload img {
+  height: 100%;
+  width: 100%;
+}
+.myResumeBottom {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: black;
+  padding-top: 4px;
+}
+/* Skills */
+.studySkillsBox {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 15px 0 0 15px;
+}
